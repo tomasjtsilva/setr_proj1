@@ -1,18 +1,19 @@
 #ifndef _FIFO_H
 #define FIFO_H
 
-
-/*estrutura do FIFO*/
-typedef struct
+/*tipo da estrutura de dados FIFO*/
+struct myFifo
 {
+	int max_size;
 	int *list;
-	int *tail;
-	int *head;	
+	int tail;
+	int head;
+	int count;
 		
-} myFifo;
+};
+//typedef struct myFifo myFifo_t;
 
 
-
-int MyFIFOInit(int size);
+int MyFIFOInit(struct myFifo *fila, int tamanho);
 
 #endif

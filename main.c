@@ -11,11 +11,18 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "FIFO.h"
+
+
+//int MyFIFOInit(struct myFifo *fila, int tamanho);
 
 void main(void)
 {
+	int ret =-1;
+	struct myFifo umfifo;
+	
 		printf("Função de teste iniciada.......\n\n");
-		
+		ret = MyFIFOInit(&umfifo, 10);
 			
 	
 	
