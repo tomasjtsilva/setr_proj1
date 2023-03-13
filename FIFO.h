@@ -16,4 +16,6 @@ struct myFifo
 
 int MyFIFOInit(struct myFifo *fila, int tamanho);
 
+int MyFIFOInsert(struct myFifo *fila);
+
 #endif

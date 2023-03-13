@@ -19,11 +19,15 @@
 void main(void)
 {
 	int ret =-1;
+	int tamanho = 0;
 	struct myFifo umfifo;
 	
-		printf("Função de teste iniciada.......\n\n");
-		ret = MyFIFOInit(&umfifo, 10);
-			
+		printf("Função de teste iniciada.......\n");
+		printf("Número de inteiros a colocar no FIFO: ");
+		scanf("%d",&tamanho);
+		printf("\n");
+		ret = MyFIFOInit(&umfifo, tamanho);
+		
 	
 	
 	return ;
