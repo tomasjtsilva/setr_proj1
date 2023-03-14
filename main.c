@@ -56,7 +56,7 @@ do{
 					{
 						printf("-------------------->Valor inserido com SUCESSO\n");
 					}else{
-						printf("----------------->FAIL-> FIFO CHEIO, necessario lerValores");
+						printf("----------------->FAIL-> FIFO CHEIO, necessario ler Valores\n");
 					}
 				  
 					printf("Insira um valor: ");
@@ -69,7 +69,7 @@ do{
 				case 3: /* remover o valor FIFO*/
 				val=0;
 				printf("PARA Remover Insira->1 OU STOP Insira->9999\n");
-				printf(">>>>>>>>>Remover????");
+				printf(">>>>>>>>>Remover????\n");
 				scanf("%d",&val);
 				do{			
 					ret=MyFIFORemove(&meufifo);
