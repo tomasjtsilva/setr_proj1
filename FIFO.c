@@ -89,7 +89,12 @@ int MyFIFOPeep(struct myFifo *fila)
 	
 	if(fila->count > 0)						//Verifica se O FIFO esta Vazio
 	{
-		ret = fila->list[fila->head+1];		//tail-1 pois a tail esta senpre no anterior9
+		if(fila->head >= fila->max_size)	//se estivermos no final do FIFO voltamos ao inicio
+		{
+		ret = fila->list[0];		
+		}else{
+			 ret = fila->list[fila->head+1];	//(tail-1) pois a tail esta senpre no anterior	
+			}
 	}
 		return ret;
 }

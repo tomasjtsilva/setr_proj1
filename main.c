@@ -38,7 +38,9 @@ do{
 		switch(op)
 		{
 				case 1: /*Inicializar o FIFO*/
-				ret = MyFIFOInit(&meufifo, 10);
+				printf("Insira o tamanho do seu FIFO: ");
+				scanf("%d",&val);
+				ret = MyFIFOInit(&meufifo, val);
 				break;
 				
 				
