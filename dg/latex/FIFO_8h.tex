@@ -1,0 +1,81 @@
+\hypertarget{FIFO_8h}{}\doxysection{/home/rt/\+Downloads/\+RE S\+E\+T\+R/\+F\+I\+FO.h File Reference}
+\label{FIFO_8h}\index{/home/rt/Downloads/RE SETR/FIFO.h@{/home/rt/Downloads/RE SETR/FIFO.h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmyFifo}{my\+Fifo}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{FIFO_8h_a2f689eed56fd43798c470e5e2603c3ec}{F\+I\+F\+O\+\_\+H}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{FIFO_8h_a01b643c900438404d11531ff386734c6}{My\+F\+I\+F\+O\+Init}} (struct \mbox{\hyperlink{structmyFifo}{my\+Fifo}} $\ast$fila, int tamanho)
+\item 
+int \mbox{\hyperlink{FIFO_8h_a1ab584ca05538705b52c035b306eb231}{My\+F\+I\+F\+O\+Insert}} (struct \mbox{\hyperlink{structmyFifo}{my\+Fifo}} $\ast$fila, int data)
+\item 
+int \mbox{\hyperlink{FIFO_8h_a2f5c1d6135c1c719e192df31f4a42577}{My\+F\+I\+F\+O\+Remove}} (struct \mbox{\hyperlink{structmyFifo}{my\+Fifo}} $\ast$fila)
+\item 
+int \mbox{\hyperlink{FIFO_8h_a3fd2dd023123846d001558edaafdaff0}{My\+F\+I\+F\+O\+Peep}} (struct \mbox{\hyperlink{structmyFifo}{my\+Fifo}} $\ast$fila)
+\item 
+int \mbox{\hyperlink{FIFO_8h_ae60eb6b0858f336baa02bb4f22da5ab7}{My\+F\+I\+F\+O\+Size}} (struct \mbox{\hyperlink{structmyFifo}{my\+Fifo}} $\ast$fila)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{FIFO_8h_a2f689eed56fd43798c470e5e2603c3ec}\label{FIFO_8h_a2f689eed56fd43798c470e5e2603c3ec}} 
+\index{FIFO.h@{FIFO.h}!FIFO\_H@{FIFO\_H}}
+\index{FIFO\_H@{FIFO\_H}!FIFO.h@{FIFO.h}}
+\doxysubsubsection{\texorpdfstring{FIFO\_H}{FIFO\_H}}
+{\footnotesize\ttfamily \#define F\+I\+F\+O\+\_\+H}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{FIFO_8h_a01b643c900438404d11531ff386734c6}\label{FIFO_8h_a01b643c900438404d11531ff386734c6}} 
+\index{FIFO.h@{FIFO.h}!MyFIFOInit@{MyFIFOInit}}
+\index{MyFIFOInit@{MyFIFOInit}!FIFO.h@{FIFO.h}}
+\doxysubsubsection{\texorpdfstring{MyFIFOInit()}{MyFIFOInit()}}
+{\footnotesize\ttfamily int My\+F\+I\+F\+O\+Init (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structmyFifo}{my\+Fifo}} $\ast$}]{fila,  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+\textbackslash{}\+Intancia um fifo com a estrutura acima descrita Funço instancia a estrutura de dados \mbox{\hyperlink{structmyFifo}{my\+Fifo}} acima decrita
+
+\textbackslash{}\+Author\+: Fernando\&Tomas $\ast$fila\+: ponteiro para a estrutura de dados declarada \textbackslash{}tamanho\+: tamanho maximo F\+I\+FO \textbackslash{}\+Date\+: 13/03/2023 \mbox{\Hypertarget{FIFO_8h_a1ab584ca05538705b52c035b306eb231}\label{FIFO_8h_a1ab584ca05538705b52c035b306eb231}} 
+\index{FIFO.h@{FIFO.h}!MyFIFOInsert@{MyFIFOInsert}}
+\index{MyFIFOInsert@{MyFIFOInsert}!FIFO.h@{FIFO.h}}
+\doxysubsubsection{\texorpdfstring{MyFIFOInsert()}{MyFIFOInsert()}}
+{\footnotesize\ttfamily int My\+F\+I\+F\+O\+Insert (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structmyFifo}{my\+Fifo}} $\ast$}]{fila,  }\item[{int}]{data }\end{DoxyParamCaption})}
+
+\textbackslash{} Insere valores inteiros no F\+I\+FO Atualiza os ponteiros da tail e numero de intens Insere um intero de cada vez
+
+\textbackslash{}\+Author\+: Fernando\&Tomas \textbackslash{}\+Input\+: Ponteiro para a estrutura de dados do F\+I\+FO \textbackslash{}\+Input\+: Valor a inserir \textbackslash{}\+Output\+: R\+E\+T\+O\+R\+NA 1 -\/$>$ S\+U\+C\+E\+S\+SO OU R\+E\+T\+O\+R\+NA 0 -\/$>$ I\+N\+S\+U\+C\+E\+S\+S\+O-\/$>$ F\+I\+FO C\+H\+E\+IO \textbackslash{}\+Date\+: 13/03/2023 \mbox{\Hypertarget{FIFO_8h_a3fd2dd023123846d001558edaafdaff0}\label{FIFO_8h_a3fd2dd023123846d001558edaafdaff0}} 
+\index{FIFO.h@{FIFO.h}!MyFIFOPeep@{MyFIFOPeep}}
+\index{MyFIFOPeep@{MyFIFOPeep}!FIFO.h@{FIFO.h}}
+\doxysubsubsection{\texorpdfstring{MyFIFOPeep()}{MyFIFOPeep()}}
+{\footnotesize\ttfamily int My\+F\+I\+F\+O\+Peep (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structmyFifo}{my\+Fifo}} $\ast$}]{fila }\end{DoxyParamCaption})}
+
+\textbackslash{}\+Le o valor mais antigo inserido no F\+I\+FO
+
+\textbackslash{}\+Author\+: Fernando\&Tomas \textbackslash{}\+Input\+: Ponteiro para a estrutura de dados do F\+I\+FO \textbackslash{}\+Output\+: R\+E\+T\+O\+R\+NA o valor lido OU 9999-\/$>$F\+I\+FO V\+A\+Z\+IO \textbackslash{}\+Date\+: 13/03/2023 \mbox{\Hypertarget{FIFO_8h_a2f5c1d6135c1c719e192df31f4a42577}\label{FIFO_8h_a2f5c1d6135c1c719e192df31f4a42577}} 
+\index{FIFO.h@{FIFO.h}!MyFIFORemove@{MyFIFORemove}}
+\index{MyFIFORemove@{MyFIFORemove}!FIFO.h@{FIFO.h}}
+\doxysubsubsection{\texorpdfstring{MyFIFORemove()}{MyFIFORemove()}}
+{\footnotesize\ttfamily int My\+F\+I\+F\+O\+Remove (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structmyFifo}{my\+Fifo}} $\ast$}]{fila }\end{DoxyParamCaption})}
+
+\textbackslash{} Remove valores inteiros no F\+I\+FO Atualiza os ponteiros da head e numero de intens Remove um inteiro de cada vez
+
+\textbackslash{}\+Author\+: Fernando\&Tomas \textbackslash{}\+Input\+: Ponteiro para a estrutura de dados do F\+I\+FO \textbackslash{}\+Output\+: R\+E\+T\+O\+R\+NA o valor Removido OU 9999-\/$>$F\+I\+FO V\+A\+Z\+IO \textbackslash{}\+Date\+: 13/03/2023 \mbox{\Hypertarget{FIFO_8h_ae60eb6b0858f336baa02bb4f22da5ab7}\label{FIFO_8h_ae60eb6b0858f336baa02bb4f22da5ab7}} 
+\index{FIFO.h@{FIFO.h}!MyFIFOSize@{MyFIFOSize}}
+\index{MyFIFOSize@{MyFIFOSize}!FIFO.h@{FIFO.h}}
+\doxysubsubsection{\texorpdfstring{MyFIFOSize()}{MyFIFOSize()}}
+{\footnotesize\ttfamily int My\+F\+I\+F\+O\+Size (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structmyFifo}{my\+Fifo}} $\ast$}]{fila }\end{DoxyParamCaption})}
+
+\textbackslash{}\+Le o numero de intens presente no F\+I\+FO
+
+\textbackslash{}\+Author\+: Fernando\&Tomas \textbackslash{}\+Input\+: Ponteiro para a estrutura de dados do F\+I\+FO \textbackslash{}\+Output\+: R\+E\+T\+O\+R\+NA o numero de Elementos do F\+I\+FO \textbackslash{}\+Date\+: 13/03/2023 ~\newline
+ 
