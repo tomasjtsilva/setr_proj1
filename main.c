@@ -1,9 +1,9 @@
 /* Este modulo contem o main
  * 
  * Objetivo: realizar testes modulo FIFO.h 
- * 
- * Autor:  
- * Data: 
+ *  
+ * Autor:  Gandarinho e Tomas
+ * Data:  2º Semestre
  * 
  * 
  *
